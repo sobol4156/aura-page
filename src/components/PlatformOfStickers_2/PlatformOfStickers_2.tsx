@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './PlatformOfStickers_2.less'
 
 const PlatformOfStickers_2 = () => {
