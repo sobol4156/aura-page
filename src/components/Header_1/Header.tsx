@@ -1,6 +1,6 @@
 import './Header.less'
 import Logo from './svg/logo.svg';
-// import Wallet from './svg/wallet.svg'
+import Wallet from './svg/wallet.svg'
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
           </ul>
         </nav>
         <button className='btn-wallet'>Кошелёк</button>
-        {/* <a className='icon-wallet' href="#"><img src={Wallet} alt="" /></a> */}
+        <a className='icon-wallet' href="#"><img src={Wallet} alt="" /></a> 
       </div>
 
     </div>

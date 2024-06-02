@@ -56,7 +56,16 @@ button:hover {
   color: #07060b;
 }
 
+.icon-wallet{
+  display: none;
+}
+
 @media (width<680px) {
+  .icon-wallet{
+    display: block;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
   .header__content {
     flex-wrap: wrap;
     padding: 0;
@@ -66,8 +75,8 @@ button:hover {
       margin-top: 15px;
     }
     button {
-      margin-right: 20px;
-      margin-top: 15px;
+      display: none;
+
     }
     nav {
       padding: 10px 0;
