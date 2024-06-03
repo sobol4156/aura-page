@@ -1,7 +1,7 @@
 import './Auction_3.less'
-import Witcher from './svg/witcher.svg'
-import Avatar from './svg/avatar.svg'
 
+import Avatar from './svg/avatar.svg'
+import Witcher from './png/sticker-1.png'
 
 const Aiction_3 = () => {
     return (
