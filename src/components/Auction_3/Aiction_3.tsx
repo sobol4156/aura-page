@@ -43,7 +43,7 @@ const Aiction_3 = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className='auction__bet-btn'>
+                        <button className='auction__bet-btn btn--fill'>
                             <span>Сделать ставку</span>
                         </button>
                     </div>

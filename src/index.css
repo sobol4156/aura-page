@@ -5,3 +5,13 @@ body{
   padding: 0;
 }
 
+:root {
+  --color-light: #fff;
+  --color-dark: #07060b;
+  --color-primary: #46f4db;
+  --color-primary-active: #57d272;
+  --color-red: #d13130;
+  --color-athens: #ededf2;
+  --color-manatee: #95959d;
+  --gap: 32px;
+}
