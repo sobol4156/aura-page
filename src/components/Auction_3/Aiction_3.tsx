@@ -1,7 +1,7 @@
 import './Auction_3.less'
 
 import Avatar from './svg/avatar.svg'
-import Witcher from './png/sticker-1.png'
+
 
 const Aiction_3 = () => {
     return (
@@ -11,7 +11,7 @@ const Aiction_3 = () => {
                 <h2 className='auction__title'>Аукцион <span>Live auction</span></h2>
                 <div className='auction__bet-content'>
                     <div className='auction__logo'>
-                        <img src={Witcher} alt="" />
+                        <img src='https://live.verstaem.online/aura/img/sticker-1.png' alt="Witcher" />
                     </div>
                     <div className='auction__bet'>
                         <div className='auction__bet-user'>
