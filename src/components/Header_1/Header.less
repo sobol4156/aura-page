@@ -13,14 +13,14 @@
   margin-right: var(--gap);
 }
 
-nav {
+.header__nav {
   margin-right: auto;
 }
-ul {
+.header__ul {
   display: flex;
 }
 
-li {
+.header__li {
   list-style-type: none;
   margin-right: 32px;
   font-family: Muller;
@@ -30,10 +30,10 @@ li {
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
-li:hover {
+.header__li:hover {
   color: #46f4db;
 }
-button {
+.btn-wallet {
   font-family: Muller;
   font-size: 16px;
   font-weight: 700;
@@ -51,7 +51,7 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+.btn-wallet:hover {
   background-color: #46f4db;
   color: #07060b;
 }
@@ -74,11 +74,11 @@ button:hover {
       margin-left: 20px;
       margin-top: 15px;
     }
-    button {
+    .btn-wallet {
       display: none;
 
     }
-    nav {
+    .header__nav {
       padding: 10px 0;
       order: 3;
       margin-top: 20px;
@@ -86,10 +86,10 @@ button:hover {
       justify-content: center;
       border-top: 1px solid #c4c4c4;
       width: 100%;
-      ul {
+      .header__ul {
         padding: 0;
         margin: 0;
-        li:last-child {
+        .header__li:last-child {
           margin-right: 0;
         }
       }
@@ -97,7 +97,7 @@ button:hover {
   }
 }
 @media (width<360px) {
-  li{
+  .header__li{
     margin-right: 10px;
   }
 }

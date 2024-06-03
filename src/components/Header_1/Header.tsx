@@ -7,11 +7,11 @@ const Header = () => {
     <div className='header'>
       <div className='header__content'>
         <a className='logo' href="#"><img src={Logo} alt="" /></a>
-        <nav>
-          <ul>
-            <li>Авторы</li>
-            <li>Коллекции</li>
-            <li>Сервисы</li>
+        <nav className='header__nav'>
+          <ul className='header__ul'>
+            <li className='header__li'>Авторы</li>
+            <li className='header__li'>Коллекции</li>
+            <li className='header__li'>Сервисы</li>
           </ul>
         </nav>
         <button className='btn-wallet'>Кошелёк</button>
