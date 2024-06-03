@@ -1,5 +1,5 @@
 import './Auction_3.less'
-import Witcher from './svg/Witcher.svg'
+import Witcher from './svg/witcher.svg'
 import Avatar from './svg/avatar.svg'
 
 
