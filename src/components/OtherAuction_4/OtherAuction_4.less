@@ -1,6 +1,103 @@
-.otherAction{
-    margin: 0 auto;
-    max-width: 1304px;
-    padding-top: 20px;
-    
+.otherAction {
+  margin: 0 auto;
+  max-width: 1304px;
+  padding: 40px 20px;
+}
+
+.otherAction__title {
+  font-family: Russo One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.1px;
+  text-align: left;
+  color: var(--color-dark);
+  margin: 0 10px;
+  
+  margin-bottom: var(--gap);
+}
+
+.otherAction__list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  list-style-type: none;
+  gap: var(--gap);
+  padding-left: 0;
+  padding: 0 10px;
+}
+
+.otherAction__item {
+  width: 296px;
+  border: none;
+}
+
+.otherAction__img {
+  background-color: var(--color-athens);
+  display: flex;
+  justify-content: center;
+}
+
+.otherAction__img {
+  border-radius: 40px 40px 0 0;
+  padding: 7px;
+}
+.otherAction__info {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 16px;
+  border-radius: 0 0 40px 40px;
+  padding-bottom: var(--gap);
+  display: flex;
+  flex-direction: column;
+}
+
+.otherAction__owner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 17px;
+  span {
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+  }
+}
+.otherAction__item-title {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.otherAction__item-price {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: var(--color-primary);
+  margin-bottom: 11px;
+}
+.otherAction__item-time {
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: var(--color-manatee);
+}
+
+
+@media(width<1358px){
+    .otherAction__list{
+        justify-content: center;
+    }
+    .otherAction__title{
+        text-align: center;
+    }
 }
