@@ -15,3 +15,7 @@ body{
   --color-manatee: #95959d;
   --gap: 32px;
 }
+button, a {
+  -webkit-tap-highlight-color: transparent; 
+  outline: none; 
+}
