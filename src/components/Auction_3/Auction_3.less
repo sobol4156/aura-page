@@ -1,11 +1,8 @@
-
-
 .auction {
   margin: 0 auto;
   max-width: 1304px;
   padding-top: 90px;
   padding-bottom: 43px;
-  
 }
 .auction__bet-content {
   display: flex;
@@ -196,67 +193,125 @@
 //btn
 
 .auction__bet-btn {
-    position: relative;
-    outline: none;
-    border: none;
-    padding: 0;
-    border-radius: 100px;
-    padding: 25px 74px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: center;
-    color: #07060B;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all ease-in-out 0.3s;
+  position: relative;
+  outline: none;
+  border: none;
+  padding: 0;
+  border-radius: 100px;
+  padding: 25px 74px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #07060b;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
 }
 
 .auction__bet-btn::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: inherit;
-    background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #46f4db 27.08%, #57d272 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
 }
 .auction__bet-btn::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: inherit;
-    background-color: var(--color-primary-active);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
-  }
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background-color: var(--color-primary-active);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
 
 .auction__bet-btn span {
-    position: relative;
-    z-index: 1; 
-    font-family: Muller, sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;
-    color: #07060B;
+  position: relative;
+  z-index: 1;
+  font-family: Muller, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #07060b;
 }
 
-.btn--fill{
-    background-color: var(--color-primary);
+.btn--fill {
+  background-color: var(--color-primary);
 }
 .btn--fill:focus::before {
-    opacity: 1;
-  }
-  
-  .btn--fill:hover::before {
-    opacity: 1;
-  }
+  opacity: 1;
+}
+
+.btn--fill:hover::before {
+  opacity: 1;
+}
+
+@media (width < 1320px) {
+    .auction__bet-props{
+        flex-direction: column;
+        gap: var(--gap);
+    }
+}
+
+@media (width < 990px) {
+
+    .auction__bet-content{
+        gap: var(--gap);
+    }
+    .auction__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .auction__bet-content{
+        flex-direction: column;
+    }
+    .auction__logo{
+        margin: 0;
+    }
+    .auction__bet-info{
+        margin: 0;
+    }
+}
+
+@media (width < 560px) {
+    .auction__logo{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .auction__timer{
+        background-image: none;
+        
+        width: 80%;
+    }
+
+    .auction__title{
+        font-size:40px;
+        span{
+            font-size: 12px;
+            flex-shrink: 0;
+            padding: 3px 5px;
+        }
+    }
+    .auction__bet-subtitle{
+        font-size: 8vw;
+    }
+}
