@@ -1,5 +1,7 @@
 import './Auction_3.less'
 import Witcher from './svg/Witcher.svg'
+import Avatar from './svg/avatar.svg'
+
 
 const Aiction_3 = () => {
     return (
@@ -13,11 +15,11 @@ const Aiction_3 = () => {
                     </div>
                     <div className='auction__bet'>
                         <div className='auction__bet-user'>
-                            <img className='auction__bet-avatar' src="" alt="" />
+                            <img className='auction__bet-avatar' src={Avatar} alt="" />
                             <span className='auction__bet-nickName'>Serge_VM222</span>
                         </div>
                         <h3 className='auction__bet-subtitle'>Witcherrr_3 (xml_t5)</h3>
-                        <div>
+                        <div className='auction__bet-props'>
                             <div className='auction__bet-info'>
                                 <span className='auction__bet-caption'>Ставка:</span>
                                 <span className='auction__bet-price'>0.10 ETH</span>

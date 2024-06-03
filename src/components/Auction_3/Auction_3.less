@@ -8,6 +8,10 @@
   display: flex;
 }
 
+.auction__content {
+  margin: 0 10px;
+}
+
 .auction__title {
   display: flex;
   align-items: center;
@@ -16,10 +20,8 @@
   font-weight: 400;
   line-height: 72.3px;
   text-align: left;
-  
 
   span {
-    
     margin-left: 10px;
     color: #d13130;
     font-family: Muller;
@@ -46,4 +48,144 @@
 
 .auction__logo {
   margin-right: 20px;
+}
+
+// bet block
+
+.auction__bet-user {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ededf2;
+  padding: 11px 16px;
+  border-radius: 23px;
+  margin-bottom: 34px;
+}
+.auction__bet-avatar {
+  margin-right: 16px;
+}
+
+.auction__bet-nickName {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.auction__bet-subtitle {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 48px;
+  text-align: left;
+  color: #07060b;
+}
+
+.auction__bet-props {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.auction__bet-info {
+  margin-right: 32px;
+  background: #ededf2;
+  border-radius: 40px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.auction__bet-caption {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #07060b;
+  margin-bottom: 15px;
+}
+
+.auction__bet-price {
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+  color: #07060b;
+  margin-bottom: 2px;
+}
+
+.auction__bet-dollar {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #95959d;
+}
+
+// timer
+.auction__timer {
+  padding: 32px;
+  background-color: #07060b;
+  color: #ffffff;
+  border-radius: 40px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  width: 396px;
+  max-height: 176px;
+  background-image: url("./svg/clock.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 32px) center;
+}
+.auction__timer-caption {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.auction__timer-content {
+  display: flex;
+  gap: 20px;
+}
+
+.auction__timer-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auction__timer-minutes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auction__timer-seconds {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.auction__timer-value {
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+
+.auction__timer-text {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
 }
