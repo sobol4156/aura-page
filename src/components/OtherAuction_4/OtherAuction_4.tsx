@@ -129,7 +129,7 @@ const OtherAuction_4 = () => {
                     </li>
                 </ul>
                 <div className='otherAction__btn-center'>
-                    <button className='btn otherAction__btn btn--stroke'>Все аукционы</button>
+                    <button className='btn otherAction__btn btn--stroke'><span>Все аукционы</span></button>
                 </div>
             </div>
         </section>

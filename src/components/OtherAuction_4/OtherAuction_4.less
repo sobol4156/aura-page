@@ -118,6 +118,11 @@
     background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    span{
+        position: relative;
+        z-index: 2;
+    }
   }
 
 .btn::before {
@@ -128,8 +133,8 @@
     top: 0;
     bottom: 0;
     border-radius: inherit;
-    background: linear-gradient(180deg, #46F4DB 27.08%, #57D272 100%);
-    opacity: 0;
+    border: 5px solid #46F4DB;
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
 }
@@ -143,10 +148,17 @@
     top: 0;
     bottom: 0;
     border-radius: inherit;
-    background-color: var(--color-primary-active);
+    background-color: #46F4DB;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover::after{
+    opacity: 1;
+}
+.btn:focus::after{
+    opacity: 1;
 }
 
 @media(width<1358px){
