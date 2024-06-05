@@ -16,8 +16,8 @@ const Email_6 = () => {
                         <button className='email__btn auction__bet-btn btn--fill'>
                             <span>Подписаться</span>
                         </button>
-                    <div className='email__contract'>
-                        <span onClick={() => {setAgree(!agree)}} className={`checkbox ${agree ? 'checkbox__active' : ''}`}></span>
+                    <div onClick={() => {setAgree(!agree)}} className='email__contract'>
+                        <span  className={`checkbox ${agree ? 'checkbox__active' : ''}`}></span>
                         <span className='checkbox__text'>Согласен на обработку персональных данных</span>
                     </div>
                 </form>

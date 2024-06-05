@@ -63,7 +63,7 @@
   margin-bottom: 10px;
 }
 .email__contract {
-
+  cursor: pointer;
   display: flex;
   height: 11px;
   align-items: center;
@@ -88,41 +88,37 @@
     width: 12px;
     height: 12px;
     cursor: pointer;
-    
   }
-  .checkbox__active{
-
+  .checkbox__active {
     background-repeat: no-repeat;
-    background-image: url('https://live.verstaem.online/aura/img/check.svg');
+    background-image: url("https://live.verstaem.online/aura/img/check.svg");
     background-position: center;
-
   }
 }
-@media(width<1312px){
-    .email__content{
-        background-position: calc(100% + 400px) center;
-    }
+@media (width<1312px) {
+  .email__content {
+    background-position: calc(100% + 400px) center;
+  }
 }
-@media(width<890px){
-    .email__content{
-        background-image: none;
-    }
+@media (width<890px) {
+  .email__content {
+    background-image: none;
+  }
 }
-@media(width<763px){
-    .email{
-        height: 466px;
+@media (width<763px) {
+  .email {
+    height: 466px;
+  }
+  .email__content {
+    justify-content: start;
+    padding: 45px 20px;
+  }
+  .email__form {
+    max-width: 330px;
+  }
+  .email__inputs {
+    input {
+      max-height: 50px;
     }
-    .email__content{
-        justify-content: start;
-        padding: 45px 20px;
-    }
-    .email__form{
-        max-width: 330px;
-    }
-    .email__inputs{
-        input{
-            max-height: 50px;
-        }
-    }
-
+  }
 }
