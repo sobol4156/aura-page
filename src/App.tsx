@@ -4,6 +4,7 @@ import Header from './components/Header_1/Header'
 import PlatformOfStickers_2 from './components/PlatformOfStickers_2/PlatformOfStickers_2'
 import Aiction_3 from './components/Auction_3/Aiction_3'
 import OtherAuction_4 from './components/OtherAuction_4/OtherAuction_4'
+import Slider_5 from './components/Slider_5/Slider_5'
 
 function App() {
 
@@ -14,9 +15,10 @@ function App() {
         <Header />
       </header>
       <main>  
-            <PlatformOfStickers_2/>
+            {/* <PlatformOfStickers_2/>
             <Aiction_3/>
-            <OtherAuction_4/>
+            <OtherAuction_4/> */}
+            <Slider_5/>
       </main>
     </>
   )

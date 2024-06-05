@@ -127,7 +127,18 @@ const OtherAuction_4 = () => {
                         </article>
 
                     </li>
+
                 </ul>
+                <div className='otherAction__slider'>
+                    <ul className='otherAction__slider-list'>
+                        <li className='otherAction__slider-item selected'></li>
+                        <li className='otherAction__slider-item'></li>
+                        <li className='otherAction__slider-item'></li>
+                        <li className='otherAction__slider-item'></li>
+                        <li className='otherAction__slider-item'></li>
+                        <li className='otherAction__slider-item'></li>
+                    </ul>
+                </div>
                 <div className='otherAction__btn-center'>
                     <button className='btn otherAction__btn btn--stroke'><span>Все аукционы</span></button>
                 </div>
