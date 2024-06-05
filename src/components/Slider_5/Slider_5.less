@@ -1,55 +1,47 @@
 .slider {
   background: #07060b;
-  height: 684px;
-  margin: 20px 0 120px 0;
+  margin-top: 20px;
+  padding: 88px 20px;
   display: flex;
   justify-content: center;
 }
+
 .slider__content {
   max-width: 1304px;
   display: flex;
   flex-direction: column;
-  padding: 88px 0;
+  
+  gap: var(--gap);
+  padding: 0 20px;
+  width: 100%;
 }
 
 .slider__title {
   color: var(--color-light);
-  font-family: Russo One;
+  font-family: 'Russo One', sans-serif; /* Обновил на корректный CSS синтаксис */
   font-size: 60px;
   font-weight: 400;
   line-height: 72.3px;
   text-align: left;
-  position: relative;
   margin: 0;
-  margin-bottom: var(--gap);
 }
-.slider__wrapper {
-  width: 100%;
-  margin-bottom: var(--gap);
-  overflow: hidden;
-}
-.slider__current {
-  display: flex;
-  position: relative;
+.slider__swiper{
+  max-width: 1304px;
   
-  height: 320px;
-  width: 1304px;
-  transition: 0.6s all ease-in-out;
+}
+.swiper{
+  max-width: 100%;
 }
 
-.slider-slide {
-  position: absolute;
+
+.slide-content{
   display: flex;
+  max-width: 100%;
   gap: var(--gap);
 }
-.slide2 {
-  left: 1350px;
-}
-.slide3 {
-  left: 2700px;
-}
-.slide4 {
-  left: 4050px;
+
+img{
+  max-width: 100%;
 }
 
 .slider__menu-btn {
@@ -58,6 +50,7 @@
   justify-content: center;
   color: var(--color-light);
 }
+
 .slide-btn {
   width: 56px;
   height: 36px;
@@ -67,27 +60,54 @@
   border: 1px solid var(--color-red);
   border-radius: 40px;
   cursor: pointer;
-  span {
-    font-family: Muller;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 16px;
-    text-align: center;
-  }
 }
+
+.slide-btn span {
+  font-family: 'Muller', sans-serif; /* Обновил на корректный CSS синтаксис */
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
 .slide-selected {
   background-color: var(--color-red);
 }
 
-.animate1{
-    transform: translateX(0);
+@media(width<764px){
+  .slider{
+    padding: 58px 20px;
+  }
+  .slider__title{
+    font-size: 48px;
+    line-height: 48px;
+  }
+
 }
-.animate2{
-    transform: translateX(-1340px);
+
+@media(width<490px){
+  .slider{
+    padding: 40px 20px;
+  }
+  .slider__title{
+    font-size: 32px;
+    line-height: 32px;
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+
 }
-.animate3{
-    transform: translateX(-2690px);
-}
-.animate4{
-    transform: translateX(-4050px);
+@media(width<335px){
+  
+  .slider__title{
+    font-size: 28px;
+    line-height: 28px;
+    img{
+      width: 32px;
+      height: 32px;
+    }
+  }
+
 }
