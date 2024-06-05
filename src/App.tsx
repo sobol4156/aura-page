@@ -5,6 +5,7 @@ import PlatformOfStickers_2 from './components/PlatformOfStickers_2/PlatformOfSt
 import Aiction_3 from './components/Auction_3/Aiction_3'
 import OtherAuction_4 from './components/OtherAuction_4/OtherAuction_4'
 import Slider_5 from './components/Slider_5/Slider_5'
+import Email_6 from './components/Email_6/Email_6'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Aiction_3/>
             <OtherAuction_4/>
             <Slider_5/>
+            <Email_6/>
       </main>
     </>
   )
