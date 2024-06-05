@@ -1,24 +1,25 @@
-import { useRef, useState } from 'react'
+import {  useRef, useState } from 'react'
 import './Slider_5.less'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
+import SwiperCore from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
 
 
 const Slider_5 = () => {
-const [currentSlide, setCurrentSlide] = useState(0)
-    const swiperRef = useRef(null);
+const [currentSlide, setCurrentSlide] = useState<number>(0)
+const swiperRef = useRef<SwiperRef>(null);
 
     const goToSlide = (index: number) => {
+        
         if (swiperRef.current && swiperRef.current.swiper) {
             setCurrentSlide(index)
             swiperRef.current.swiper.slideTo(index);
         }
     };
 
-    const handleSlideChange = (swiper) => {
+    const handleSlideChange = (swiper: SwiperCore) => {
         setCurrentSlide(swiper.activeIndex);
     };
 
