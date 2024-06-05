@@ -8,6 +8,7 @@
 .email__content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 1304px;
   padding: 20px 20px;
   background-image: url("https://live.verstaem.online/aura/img/subscribe-bg.png");
@@ -59,8 +60,10 @@
 .email__btn {
   height: 70px;
   max-width: 275px;
+  margin-bottom: 10px;
 }
 .email__contract {
+
   display: flex;
   height: 11px;
   align-items: center;
@@ -94,4 +97,32 @@
     background-position: center;
 
   }
+}
+@media(width<1312px){
+    .email__content{
+        background-position: calc(100% + 400px) center;
+    }
+}
+@media(width<890px){
+    .email__content{
+        background-image: none;
+    }
+}
+@media(width<763px){
+    .email{
+        height: 466px;
+    }
+    .email__content{
+        justify-content: start;
+        padding: 45px 20px;
+    }
+    .email__form{
+        max-width: 330px;
+    }
+    .email__inputs{
+        input{
+            max-height: 50px;
+        }
+    }
+
 }
