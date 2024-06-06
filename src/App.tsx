@@ -17,10 +17,10 @@ function App() {
         <Header />
       </header>
       <main>  
-            {/* <PlatformOfStickers_2/>
+            <PlatformOfStickers_2/>
             <Aiction_3/>
             <OtherAuction_4/>
-            <Slider_5/> */}
+            <Slider_5/>
             <Email_6/>
             <Author_7/>
       </main>

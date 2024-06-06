@@ -15,7 +15,10 @@ body{
   --color-manatee: #95959d;
   --gap: 32px;
 }
-button, a {
-  -webkit-tap-highlight-color: transparent; 
-  outline: none; 
+button, a, input, textarea, select {
+  -webkit-tap-highlight-color: transparent; /* Убирает выделение при нажатии на мобильных устройствах с WebKit */
+  -moz-tap-highlight-color: transparent; /* Убирает выделение при нажатии в Firefox */
+  outline: none; /* Убирает обводку при фокусе */
+  -moz-outline-style: none; /* Убирает обводку в Firefox */
+  outline-style: none; /* Убирает обводку в других браузерах */
 }
