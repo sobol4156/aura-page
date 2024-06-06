@@ -1,0 +1,87 @@
+.seller {
+  background-color: var(--color-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.seller__content {
+  width: 1304px;
+  padding: 90px 20px 57px 20px;
+}
+
+.seller__title {
+    margin: 0;
+    margin-bottom: var(--gap);
+  font-family: Russo One;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 72.3px;
+  text-align: left;
+  color: #fff;
+}
+
+.seller__list {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: var(--gap);
+}
+.seller__item {
+  display: flex;
+  gap: 32px;
+
+  height: 174px;
+  background: #fff;
+  border-radius: 40px;
+  width: calc(50% -(var(--gap) / 2));
+}
+
+.seller__item-img {
+  display: flex;
+  align-items: center;
+}
+.seller__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.seller__item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color: var(--color-dark);
+  }
+}
+.seller__item-name {
+  margin: 0;
+  font-family: Muller;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: left;
+}
+.seller__item-price {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+
+  span {
+    font-family: Muller;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+    color: var(--color-manatee);
+  }
+}
