@@ -12,7 +12,7 @@ const Author_7 = () => {
                 </div>
                 <div className='author__form'>
                     <label className='author__add'>
-                        <input type="file" accept='image/*'/>
+                        <input className='author__file' type="file" accept='image/*'/>
                         <span className='author__add-btn'></span>
                         <span className='author__add-text'>Прикрепить работы (.jpeg / .png)</span>
                     </label>
