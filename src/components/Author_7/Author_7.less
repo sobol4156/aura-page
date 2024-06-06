@@ -79,76 +79,118 @@
   color: #95959d;
 }
 
-.author__file{
-    position: absolute;
-    opacity: 0;
+.author__file {
+  position: absolute;
+  opacity: 0;
 }
-.author__add-btn{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 2px solid transparent;
-    border-radius: 100%;
-    background-color: #fff;
-    transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+.author__add-btn {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-.author__add-btn::before{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 7px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:var(--color-athens);
-    transition: background 0.3s ease-in-out;
+.author__add-btn::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-athens);
+  transition: background 0.3s ease-in-out;
 }
-.author__add-btn::after{
-    content: '';
-    position: absolute;
-    width: 7px;
-    height: 40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:var(--color-athens);
-    transition: background 0.3s ease-in-out;
-}
-
-.author__add:focus{
-    .author__add-btn{
-        border-color: var(--color-primary);
-        color: var(--color-primary);
-    }
-    .author__add-btn::before{
-        background-color: var(--color-primary);
-    }
-    .author__add-btn::after{
-        background-color: var(--color-primary);
-    }
+.author__add-btn::after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-athens);
+  transition: background 0.3s ease-in-out;
 }
 
-.author__add:hover{
-    .author__add-btn{
-        border-color: var(--color-primary);
-        color: var(--color-primary);
-    }
-    .author__add-btn::before{
-        background-color: var(--color-primary);
-    }
-    .author__add-btn::after{
-        background-color: var(--color-primary);
-    }
+.author__add:focus {
+  .author__add-btn {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .author__add-btn::before {
+    background-color: var(--color-primary);
+  }
+  .author__add-btn::after {
+    background-color: var(--color-primary);
+  }
 }
-.author__add:active{
-    .author__add-btn{
-        border-color: var(--color-primary);
-        color: var(--color-primary);
+
+.author__add:hover {
+  .author__add-btn {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .author__add-btn::before {
+    background-color: var(--color-primary);
+  }
+  .author__add-btn::after {
+    background-color: var(--color-primary);
+  }
+}
+.author__add:active {
+  .author__add-btn {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  .author__add-btn::before {
+    background-color: var(--color-primary);
+  }
+  .author__add-btn::after {
+    background-color: var(--color-primary);
+  }
+}
+
+.author__send {
+  margin: 0;
+}
+
+@media (width<1150px) {
+  .author__text {
+    img {
+      display: none;
     }
-    .author__add-btn::before{
-        background-color: var(--color-primary);
+  }
+  .author__content {
+    flex-direction: column;
+  }
+  .author__form {
+    align-items: flex-end;
+    gap: 32px;
+    background-image: url("https://live.verstaem.online/aura/img/become-decorate-tablet.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  .author__connect {
+    width: 604px;
+  }
+  .author__wrap {
+    width: 624px;
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media (width<990px) {
+  .author__form {
+    background-image: none;
+    align-items: center;
+  }
+  .author__text {
+    img {
+      display: block;
     }
-    .author__add-btn::after{
-        background-color: var(--color-primary);
-    }
+  }
 }

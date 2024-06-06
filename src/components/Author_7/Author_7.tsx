@@ -12,15 +12,18 @@ const Author_7 = () => {
                 </div>
                 <div className='author__form'>
                     <label className='author__add'>
-                        <input className='author__file' type="file" accept='image/*'/>
+                        <input className='author__file' type="file" accept='image/*' />
                         <span className='author__add-btn'></span>
                         <span className='author__add-text'>Прикрепить работы (.jpeg / .png)</span>
                     </label>
-                    <input className='author__connect' type="text" placeholder='@telegram_nickname'/>
-                        {/* взял из Auction_3 */}
-                        <button className='email__btn auction__bet-btn btn--fill'>
+                    <input className='author__connect' type="text" placeholder='@telegram_nickname' />
+                    {/* взял из Auction_3 */}
+                    <div className='author__wrap'>
+                        <button className='author__send email__btn auction__bet-btn btn--fill'>
                             <span>Отправить</span>
                         </button>
+                    </div>
+
                 </div>
             </div>
         </section>
