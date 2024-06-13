@@ -27,6 +27,21 @@
 
   gap: var(--gap);
 }
+/* Стили только для Firefox */
+@-moz-document url-prefix() {
+  .seller__list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+  }
+
+  .seller__list > * {
+    flex: 1 1 calc(50% - var(--gap)); /* или используйте ширину */
+    box-sizing: border-box; /* Убедитесь, что это включено для правильного учета отступов и границ */
+  }
+}
+
 .seller__item {
   display: flex;
   gap: 32px;
@@ -145,7 +160,7 @@
         padding: 0 20px 20px 20px;
     }
 }
-@media(width<360px){
+@media(width < 360px){
     .seller__title{
         font-size: 38px;
     }
